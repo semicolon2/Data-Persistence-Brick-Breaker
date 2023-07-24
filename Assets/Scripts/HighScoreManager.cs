@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class HighScoreManager : MonoBehaviour
 {
+    void Start()
+    {
+        DataManager.Instance.SortScores();
+
+    }
+
     public void ReturnToMenu()
     {
         SceneManager.LoadScene(0);

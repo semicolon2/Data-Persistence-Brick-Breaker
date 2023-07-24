@@ -1824,6 +1824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NameInput: {fileID: 1087043370}
+  HighScoreText: {fileID: 1490527435}
 --- !u!4 &1651806652
 Transform:
   m_ObjectHideFlags: 0
