@@ -3,53 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
 public class MenuManager : MonoBehaviour
 {
-    public static MenuManager Instance;
-
     public string PlayerName;
 
-    [System.Serializable]
-    public struct HighScore
-    {
-        public string PlayerName;
-        public int Score;
-    }
-
-    public List<HighScore> HighScores;
-
-    [System.Serializable]
-    class SaveData
-    {
-        public List<HighScore> HighScores;
-    }
-
-    public InputField NameInput;
-
-    void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        } 
-        else 
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    public void ReturnToMenu()
-    {
-        SceneManager.LoadScene(0);
-    }
+    public TMP_InputField NameInput;
 
     public void StartGameButton()
     {
+        PlayerName = NameInput.text;
         SceneManager.LoadScene(1);
     }
 
