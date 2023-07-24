@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 39126670}
-  - component: {fileID: 39126669}
   - component: {fileID: 39126668}
   m_Layer: 0
   m_Name: DataManager
@@ -153,19 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc40ddbfc99ff7c418f353d4bfdb25a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HighScores: []
---- !u!114 &39126669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 39126667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc40ddbfc99ff7c418f353d4bfdb25a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  PlayerName: 
   HighScores: []
 --- !u!4 &39126670
 Transform:
@@ -1836,7 +1823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eff4ff173b25d6428295027b3baea4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerName: 
   NameInput: {fileID: 1087043370}
 --- !u!4 &1651806652
 Transform:

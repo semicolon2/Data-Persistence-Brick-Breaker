@@ -6,15 +6,16 @@ public class DataManager : MonoBehaviour
 {
     public static DataManager Instance;
 
+    public string PlayerName;
+
     [System.Serializable]
     public struct HighScore
     {
         public string PlayerName;
         public int Score;
     }
-
     public List<HighScore> HighScores;
-
+    
     [System.Serializable]
     class SaveData
     {
