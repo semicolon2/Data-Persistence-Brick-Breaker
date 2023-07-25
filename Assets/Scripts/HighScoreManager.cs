@@ -13,13 +13,15 @@ public class HighScoreManager : MonoBehaviour
     {
         DataManager.Instance.SortScores();
 
+        int index = 1;
         foreach (DataManager.HighScore highScore in DataManager.Instance.HighScores)
         {
             TMP_Text text = Instantiate(TextPrefab, Canvas.transform.position, transform.rotation).GetComponent<TMP_Text>();
             text.transform.SetParent(Canvas.transform, false);
             text.rectTransform.anchoredPosition = new Vector2(0, nextPostion);
-            text.text = $"1. {highScore.PlayerName} : {highScore.Score}";
+            text.text = $"{index}. {highScore.PlayerName} : {highScore.Score}";
             nextPostion -= 50;
+            index++;
         }
     }
 
